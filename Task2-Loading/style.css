@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+#loading-border {
+    border-radius: 50%;
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    border: 5px dashed black ;
+    
+    animation: rotacija 5s linear infinite;
+    border-top:5px dashed orange;
+    border-right:5px dashed orange ;
+
+    animation-direction: normal;
+}
+
+.loading-text {
+    
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.459);
+    
+}
+@keyframes rotacija {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
