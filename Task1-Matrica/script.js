@@ -36,7 +36,7 @@ function sumirajSusjede(broj)
                 susjedi=matrica[i+1][j+1]+","+matrica[i-1][j-1]+","+matrica[i+1][j-1]+","+
                 matrica[i-1][j+1]+","+matrica[i+1][j]+","+matrica[i][j+1]+","+matrica[i-1][j]+","+matrica[i][j-1];
                 
-                document.getElementById("text").innerHTML+="Brojevi koji okružuju broj "+intBroj+" su: "+susjedi+". Suma ovih brojeva je: "+(suma-intBroj)+" Na ovu sumu se dodaje broj koji se proslijedio funkciji ("+intBroj+") i to nam daje rezultat: "+suma;
+                document.getElementById("text").innerHTML+="Brojevi koji okružuju broj "+intBroj+" su: "+susjedi+". Suma ovih brojeva je: "+(suma-intBroj)+" Na ovu sumu se dodaje broj koji se proslijedio funkciji ("+intBroj+") i to nam daje rezultat: "+suma+'<br>';
                 
                 }
             }
